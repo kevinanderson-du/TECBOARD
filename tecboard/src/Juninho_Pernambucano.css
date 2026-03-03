@@ -1,5 +1,23 @@
 h1 {
-    color: aqua;
+    color: rgb(220, 40, 40);
     display: flex;
     justify-content: center;
+}
+
+.tela {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.box{
+    background-color: rgb(24, 24, 24);
+    
+    padding: 32px 28px;
+    border-radius: 16px;
+    width: 384px;
+    max-width: 90%;
+    margin: 64px auto;
+    color: aliceblue;
+
+
 }
