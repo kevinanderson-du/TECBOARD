@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 h1 {
     color: rgb(220, 40, 40);
     display: flex;
@@ -21,4 +25,21 @@ h1 {
     
 
 
+}
+
+.header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    background: linear-gradient(180deg, #02cfa6 0%, #001712 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    max-width: 90%;
 }

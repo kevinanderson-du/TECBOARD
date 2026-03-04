@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './Juninho_Pernambucano.css'
+
+import './Style.css'
 
 function Box_de_formulario () {
   return (
@@ -18,15 +16,15 @@ function Box_de_formulario () {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <main>
-      <header>
-      <div>
-        <h1>Hello world</h1>
-      </div>
+      <header className='header'>
+      <img className='image' src="/Logo.png" alt=''/>
       </header>
+      <section className='section'>
+        <img className='image' src="/Mulher_Com_Oculos.png" alt=''/>
+      </section>
       <Box_de_formulario/>
     </main>
   )
