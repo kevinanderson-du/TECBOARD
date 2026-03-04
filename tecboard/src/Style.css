@@ -1,30 +1,17 @@
 body {
     margin: 0;
-}
-
-h1 {
-    color: rgb(220, 40, 40);
-    display: flex;
-    justify-content: center;
-}
-
-.tela {
-    background-color: black;
-    min-height: 100vh;
+    
 }
 
 .box{
     background-color: rgb(24, 24, 24);
     
-    padding: 32px 28px;
+    padding: 45px;
     border-radius: 16px;
     width: 384px;
     max-width: 90%;
     margin: 64px auto;
     color: rgb(10, 83, 147);
-    
-
-
 }
 
 .header {
