@@ -10,7 +10,7 @@ function Box_de_formulario () {
           Nome:
         </label>
 
-        <input type='text' id='nome'/>
+        <input className='caixas_de_texto' type='text' id='nome'/>
       </fieldset>
 
       <fieldset>
@@ -18,7 +18,7 @@ function Box_de_formulario () {
           CPF:
         </label>
 
-        <input type='text' id='cpf'/>
+        <input className='caixas_de_texto' type='text' id='cpf'/>
       </fieldset>
 
       <fieldset>
@@ -26,7 +26,7 @@ function Box_de_formulario () {
           Senha:
         </label>
 
-        <input type='password' id='senha'/>
+        <input className='caixas_de_texto' type='password' id='senha'/>
 
         
       </fieldset>
