@@ -32,7 +32,7 @@ function Box_de_formulario () {
       </fieldset>
       
       
-        <input className='botao' type='button' id='botao' value="Botao"/>
+        <input className='botao' type='button' id='botao' value="Confirmar"/>
         
       
 
