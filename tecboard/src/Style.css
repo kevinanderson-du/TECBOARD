@@ -40,6 +40,8 @@ body {
     justify-content: center;
     padding: 20px 50px;
     margin: 30px auto;
+    border-radius: 20px;
+    border: none;
 }
 
 fieldset {
