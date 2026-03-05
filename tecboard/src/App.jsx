@@ -5,7 +5,7 @@ function Box_de_formulario () {
   return (
     <form className='box'>
       <h2>Preencha seus dados:</h2>
-      <fieldset>
+      <fieldset className='fieldset'>
         <label>
           Nome:
         </label>
