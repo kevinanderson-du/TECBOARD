@@ -30,3 +30,12 @@ body {
 .image{
     max-width: 90%;
 }
+
+.botao {
+    background-color: #02cfa6;
+    color: #001712;
+    display: flex;
+    justify-content: center;
+    padding: 25px 70px;
+    margin: 30px auto;
+}

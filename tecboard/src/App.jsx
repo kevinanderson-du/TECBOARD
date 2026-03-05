@@ -9,8 +9,33 @@ function Box_de_formulario () {
         <label>
           Nome:
         </label>
+
         <input type='text' id='nome'/>
       </fieldset>
+
+      <fieldset>
+        <label>
+          CPF:
+        </label>
+
+        <input type='text' id='cpf'/>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Senha:
+        </label>
+
+        <input type='password' id='senha'/>
+
+        
+      </fieldset>
+      
+      
+        <input className='botao' type='button' id='botao' value="Botao"/>
+        
+      
+
     </form>
   )
 }
