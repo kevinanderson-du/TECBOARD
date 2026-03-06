@@ -40,6 +40,16 @@ function Box_de_formulario () {
   )
 }
 
+function Rodape () {
+  return (
+    <main>
+    <footer>
+      <p>© 2026 Kevin Anderson</p>
+    </footer>
+    </main>
+  )
+}
+
 function App() {
 
   return (
@@ -51,6 +61,7 @@ function App() {
         <img className='image' src="/Mulher_Com_Oculos.png" alt=''/>
       </section>
       <Box_de_formulario/>
+      <Rodape/>
     </main>
   )
 }
