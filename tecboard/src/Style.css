@@ -8,8 +8,10 @@ body {
 footer {
     margin: 0;
     background-color: #151515;
-    padding: 20px;
-    color: #02cfa6;
+    padding: 40px;
+    color: #6b6b6b;
+    display: flex;
+    justify-content: center;
 }
 
 .box{
