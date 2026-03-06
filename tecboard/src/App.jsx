@@ -1,18 +1,19 @@
 
 import './Style.css'
 
-function Teste_de_props (props) {
+function Teste_de_props ({ copo }) {
   return(
-    <h1>{props.children}</h1>
+    <h1>{copo}</h1>
+    
   )
 }
 
 function Box_de_formulario () {
   return (
     <form className='box'>
-      <Teste_de_props>
-        Se cadastre agora!
-      </Teste_de_props>
+      <Teste_de_props copo={"Se cadastre agora!"}/>
+        
+      
       <h2 className='preencha'>Preencha seus dados:</h2>
       <fieldset className='fieldset'>
         <label className='preencha'>
