@@ -1,12 +1,21 @@
 
 import './Style.css'
 
+function Teste_de_props (props) {
+  return(
+    <h1>{props.children}</h1>
+  )
+}
+
 function Box_de_formulario () {
   return (
     <form className='box'>
-      <h2>Preencha seus dados:</h2>
+      <Teste_de_props>
+        Se cadastre agora!
+      </Teste_de_props>
+      <h2 className='preencha'>Preencha seus dados:</h2>
       <fieldset className='fieldset'>
-        <label>
+        <label className='preencha'>
           Nome:
         </label>
 
@@ -14,7 +23,7 @@ function Box_de_formulario () {
       </fieldset>
 
       <fieldset>
-        <label>
+        <label className='preencha'>
           CPF:
         </label>
 
@@ -22,7 +31,7 @@ function Box_de_formulario () {
       </fieldset>
 
       <fieldset>
-        <label>
+        <label className='preencha'>
           Senha:
         </label>
 
