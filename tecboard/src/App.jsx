@@ -1,9 +1,9 @@
 
 import './Style.css'
 
-function Teste_de_props ({ copo }) {
+function Teste_de_props ({ seCadastreAgora }) {
   return(
-    <h1>{copo}</h1>
+    <h1>{seCadastreAgora}</h1>
     
   )
 }
@@ -11,7 +11,7 @@ function Teste_de_props ({ copo }) {
 function Box_de_formulario () {
   return (
     <form className='box'>
-      <Teste_de_props copo={"Se cadastre agora!"}/>
+      <Teste_de_props seCadastreAgora={"Se cadastre agora!"}/>
         
       
       <h2 className='preencha'>Preencha seus dados:</h2>
