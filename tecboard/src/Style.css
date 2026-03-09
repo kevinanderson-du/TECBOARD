@@ -44,7 +44,7 @@ footer {
     max-width: 90%;
 }
 
-.botao {
+.botao { /* Estilo dos botões */
     background-color: #02cfa6;
     color: #001712;
     display: flex;
@@ -53,11 +53,16 @@ footer {
     margin: 30px auto;
     border-radius: 50px;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /* Esse comando serve pro cursor do mouse mudar a "mãozinha" quando passa em cima do botão */
 }
 
-.botao:hover {
+.botao:hover { /* Mudar a cor dos botões quando o mouse passar em cima */
   background-color: #5efcdd;
+}
+
+.botao:active { /* Dar o efeito de profundidade quando clicar no botão */
+  transform: translateY(3px);
+  box-shadow: 0 0 0 darkgreen;
 }
 
 fieldset {
