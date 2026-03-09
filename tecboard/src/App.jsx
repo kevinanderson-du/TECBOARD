@@ -1,64 +1,6 @@
-
+import {Rodape} from './componentes/Rodape'
+import {Box_de_formulario} from './componentes/Box'
 import './Style.css'
-
-function Teste_de_props ({ seCadastreAgora }) {
-  return(
-    <h1>{seCadastreAgora}</h1>
-    
-  )
-}
-
-function Box_de_formulario () {
-  return (
-    <form className='box'>
-      <Teste_de_props seCadastreAgora={"Se cadastre agora!"}/>
-        
-      
-      <h2 className='preencha'>Preencha seus dados:</h2>
-      <fieldset className='fieldset'>
-        <label className='preencha'>
-          Nome:
-        </label>
-
-        <input className='caixas_de_texto' type='text' id='nome'/>
-      </fieldset>
-
-      <fieldset>
-        <label className='preencha'>
-          CPF:
-        </label>
-
-        <input className='caixas_de_texto' type='text' id='cpf'/>
-      </fieldset>
-
-      <fieldset>
-        <label className='preencha'>
-          Senha:
-        </label>
-
-        <input className='caixas_de_texto' type='password' id='senha'/>
-
-        
-      </fieldset>
-      
-      
-        <input className='botao' type='button' id='botao' value="Confirmar"/>
-        
-      
-
-    </form>
-  )
-}
-
-function Rodape () {
-  return (
-    <main>
-    <footer>
-      <p>© 2026 Kevin Anderson</p>
-    </footer>
-    </main>
-  )
-}
 
 function App() {
 
