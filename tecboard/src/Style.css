@@ -56,6 +56,10 @@ footer {
     cursor: pointer;
 }
 
+.botao:hover {
+  background-color: #5efcdd;
+}
+
 fieldset {
   border: solid #363636 2px;
   border-radius: 50px;
