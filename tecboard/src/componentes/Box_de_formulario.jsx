@@ -1,12 +1,12 @@
-import {Teste_de_props} from './componentes/Teste_de_props'
+import {Teste_de_props} from './Teste_de_props'
 import './Style.css'
 
 export function Box_de_formulario () {
   return (
     <form className='box'>
-      <Teste_de_props seCadastreAgora={"Se cadastre agora!"}/>
-        
       
+        
+      <Teste_de_props/>
       <h2 className='preencha'>Preencha seus dados:</h2>
       <fieldset className='fieldset'>
         <label className='preencha'>
