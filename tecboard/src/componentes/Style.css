@@ -55,6 +55,7 @@ footer {
     border: none;
     cursor: pointer; /* Esse comando serve pro cursor do mouse mudar a "mãozinha" quando passa em cima do botão */
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .botao:hover { /* Mudar a cor dos botões quando o mouse passar em cima */
@@ -81,10 +82,6 @@ fieldset {
   font-family: "Poppins", sans-serif;
   padding: 5px;
 }
-
-
-
-
 
 .preencha {
     color: aliceblue;

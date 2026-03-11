@@ -3,6 +3,7 @@ import {Box_de_formulario} from './componentes/Box_de_formulario'
 import './componentes/Style.css'
 
 
+
 function App() {
 
   return (
@@ -15,11 +16,7 @@ function App() {
       </section>
       
       <Box_de_formulario/>
-      <div className='div'>
-        <h1 className='acesso'>Acesso</h1>
-        <h3 className='acesso'>Tenha acesso a vários benefícios exclusivos!</h3>
-        <input className='botao' type='button' id='acesso' value={"Acessar"}/>
-      </div>
+      
       <Rodape/>
     </main>
   )
