@@ -74,9 +74,17 @@ fieldset {
 }
 
 .caixas_de_texto {
-    background-color: #181818;
     border: none;
+  color: aliceblue;
+  outline: none;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
 }
+
+
+
+
 
 .preencha {
     color: aliceblue;
@@ -89,6 +97,7 @@ fieldset {
     margin: 64px auto;
     width: 400px;
     padding: 20px;
+    
 }
 
 .acesso {
