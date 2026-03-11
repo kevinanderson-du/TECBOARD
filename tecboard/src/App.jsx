@@ -1,6 +1,7 @@
 import {Rodape} from './componentes/Rodape'
 import {Box_de_formulario} from './componentes/Box_de_formulario'
-import './Style.css'
+import './componentes/Style.css'
+
 
 function App() {
 
