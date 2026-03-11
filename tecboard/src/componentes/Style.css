@@ -54,7 +54,7 @@ footer {
     border-radius: 50px;
     border: none;
     cursor: pointer; /* Esse comando serve pro cursor do mouse mudar a "mãozinha" quando passa em cima do botão */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .botao:hover { /* Mudar a cor dos botões quando o mouse passar em cima */
