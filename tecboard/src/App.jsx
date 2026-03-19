@@ -6,6 +6,28 @@ import './componentes/Style.css'
 
 function App() {
 
+  const temas = [
+    {
+      id: 1, nome: 'front-end'
+    },
+    {
+      id: 2, nome: 'back-end'
+    },
+    {
+      id: 3, nome: 'back-end'
+    },
+    {
+      id: 4, nome: 'back-end'
+    },
+    {
+      id: 5, nome: 'back-end'
+    },
+    {
+      id: 6, nome: 'back-end'
+    }
+    
+  ]
+
   return (
     <main>
       <header className='header'>
