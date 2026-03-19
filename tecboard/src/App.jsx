@@ -1,6 +1,7 @@
 import {Rodape} from './componentes/Rodape'
 import {Box_de_formulario} from './componentes/Box_de_formulario'
 import './componentes/Style.css'
+import { Tema } from './componentes/Tema'
 
 
 
@@ -14,16 +15,16 @@ function App() {
       id: 2, nome: 'back-end'
     },
     {
-      id: 3, nome: 'back-end'
+      id: 3, nome: 'dev-ops'
     },
     {
-      id: 4, nome: 'back-end'
+      id: 4, nome: 'inteligencia artificial'
     },
     {
-      id: 5, nome: 'back-end'
+      id: 5, nome: 'Data science'
     },
     {
-      id: 6, nome: 'back-end'
+      id: 6, nome: 'cloud'
     }
     
   ]
@@ -38,7 +39,14 @@ function App() {
       </section>
       
       <Box_de_formulario/>
-      
+      <section>
+      <Tema tema={temas[0]}/>
+      </section>
+      <section>
+      <Tema tema={temas[1]}/>
+      </section>
+
+
       <Rodape/>
     </main>
   )
