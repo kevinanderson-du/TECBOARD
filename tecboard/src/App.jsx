@@ -45,6 +45,18 @@ function App() {
       <section>
       <Tema tema={temas[1]}/>
       </section>
+      <section>
+      <Tema tema={temas[2]}/>
+      </section>
+      <section>
+      <Tema tema={temas[3]}/>
+      </section>
+      <section>
+      <Tema tema={temas[4]}/>
+      </section>
+      <section>
+      <Tema tema={temas[5]}/>
+      </section>
 
 
       <Rodape/>
