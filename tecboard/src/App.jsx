@@ -36,7 +36,7 @@ function App() {
     mini_card: temas[0],
     data: new Date(),
     titulo: 'Mulheres no Front',
-    desc: ''}
+    desc: 'Valorizando e impulsionando a participação feminina no desenvolvimento front-end.'}
   ]
 
   return (
