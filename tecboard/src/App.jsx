@@ -2,6 +2,7 @@ import {Rodape} from './componentes/Rodape'
 import {Box_de_formulario} from './componentes/Box_de_formulario'
 import './componentes/Style.css'
 import { Tema } from './componentes/Tema'
+import { Card } from './componentes/Card'
 
 
 
@@ -29,6 +30,15 @@ function App() {
     
   ]
 
+  const eventos = [
+    {
+    capa: '/mulheres_no_front.png',
+    mini_card: temas[0],
+    data: new Date(),
+    titulo: 'Mulheres no Front',
+    desc: ''}
+  ]
+
   return (
     <main>
       <header className='header'>
@@ -43,9 +53,11 @@ function App() {
         return (
           <section key={item.id}>
       <Tema tema={item}/>
+      <Card evento={eventos[0]}/>
       </section>
         )
       })}
+      
       {/*<section>
       <Tema tema={temas[0]}/>
       </section>
