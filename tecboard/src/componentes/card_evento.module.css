@@ -1,4 +1,45 @@
+/* 1. O PAI: Controla a largura e o formato de todo o card */
+.card_container {
+    display: flex;
+    flex-direction: column;
+    width: 282px;          /* A largura fica AQUI */
+    border-radius: 10px;   /* Arredonda o card INTEIRO */
+    overflow: hidden;      /* Mágica que corta a quina quadrada da imagem pra seguir o border-radius */
+    background-color: #212121;
+}
+
+
+.imagem {
+    display: block;        /* Tira o espacinho fantasma embaixo da foto */
+    width: 100%;           /* Preenche os 282px do pai */
+    height: auto;
+}
+
+/* 3. OS TEXTOS: Preenchem o espaço que sobra e centralizam */
 .tag {
-    
+    background-color: #212121;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 20px;
+    
+    width: 100%;           /* Preenche os 282px do pai */
+    box-sizing: border-box;/* MUITO IMPORTANTE: Impede que o padding faça a caixa passar de 282px */
+}
+
+.tema {
+    background-color: rgb(100, 100, 100);
+    padding: 4px;
+    width: 118px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+
+.mulheres_no_front {
+    font-family: "Orbitron", sans-serif;
+    
 }

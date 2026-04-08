@@ -54,6 +54,7 @@ function App() {
           <section key={item.id}>
       <Tema tema={item}/>
       <Card evento={eventos[0]}/>
+      
       </section>
         )
       })}
