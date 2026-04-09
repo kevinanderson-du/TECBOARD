@@ -43,10 +43,29 @@
     text-transform: uppercase;
     font-size: 15px;
     text-align: center;
+    
 }
 
 .mulheres_no_front {
     font-family: "Orbitron", sans-serif;
     font-size: 20px;
-    
+    /*line-height: 120%;    isso é tipo um padding só qque vertical*/
+    /*letter-spacing: 10%;  isso é o espaçamento entre as letras*/
+}
+
+.data {
+    /*font-family: 'Montserrat regular' sans-serif;
+    font-weight: bold;*/
+}
+
+.desc {
+    font-family: 'Montserrat' sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.icone_calendario{
+    height: 15px;
+    width: 14px;
+    margin-right: 6px;
 }
