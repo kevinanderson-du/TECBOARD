@@ -1,4 +1,4 @@
-/* 1. O PAI: Controla a largura e o formato de todo o card */
+
 .card_container {
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     height: auto;
 }
 
-/* 3. OS TEXTOS: Preenchem o espaço que sobra e centralizam */
+
 .tag {
     background-color: #212121;
     color: aliceblue;
