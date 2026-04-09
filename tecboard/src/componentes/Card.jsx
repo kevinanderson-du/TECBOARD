@@ -13,7 +13,10 @@ export function Card({evento}) {
 
                 <h5 className={styles.desc}>{evento.desc}</h5>
 
-                
+                <p className={styles.data}>
+                    <img className={styles.icone_calendario} src='/ICONE CALENDARIO.png' alt=''/>
+                    {evento.data.toLocaleDateString('pt-BR')}
+                </p>
             </div>
         </div>
     )
