@@ -36,7 +36,18 @@ function App() {
     mini_card: temas[0],
     data: new Date(),
     titulo: 'Mulheres no Front',
-    desc: 'Valorizando e impulsionando a participação feminina no desenvolvimento front-end.'}
+    desc: 'Valorizando e impulsionando a participação feminina no desenvolvimento front-end.',
+    id: 0},
+
+    {
+    capa: '/BATATA.jpg',
+    mini_card: temas[1],
+    data: new Date(),
+    titulo: 'Batatinha',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    id: 1},
+    
+
   ]
 
   return (
@@ -49,15 +60,36 @@ function App() {
       </section>
       
       <Box_de_formulario/>
-      {temas.map(function(item){
-        return (
-          <section key={item.id}>
-      <Tema tema={item}/>
-      <Card evento={eventos[0]}/>
+
+
+      {/* 1. O map de FORA constrói as Prateleiras (Temas) */}
+{temas.map(function(temaAtual) {
+  
+  // 2. O FILTRO: Vasculha a lista de eventos e guarda só os deste tema
+  // Ele compara o ID do tema do evento com o ID da prateleira atual
+  const eventosDestaPrateleira = eventos.filter(function(evento) {
+    return evento.mini_card.id === temaAtual.id;
+  });
+
+  return (
+    <section key={temaAtual.id} className="prateleira-section">
       
-      </section>
-        )
-      })}
+      {/* Imprime o título e detalhes do Tema */}
+      <Tema tema={temaAtual} />
+
+      {/* 3. O map de DENTRO desenha os Cards que passaram no filtro */}
+      <div>
+        {eventosDestaPrateleira.map(function(eventoAtual) {
+          return (
+            // Agora sim passamos o evento correto! E usamos o seu novo ID como key.
+            <Card key={eventoAtual.id} evento={eventoAtual} />
+          );
+        })}
+      </div>
+
+    </section>
+  );
+})}
       
       {/*<section>
       <Tema tema={temas[0]}/>
