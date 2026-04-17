@@ -3,7 +3,8 @@ import {Box_de_formulario} from './componentes/Box_de_formulario'
 import './componentes/Style.css'
 import { Tema } from './componentes/Tema'
 import { Card } from './componentes/Card'
-import {CardSimples} from './componentes/CardSimples'
+
+
 
 
 
@@ -30,6 +31,8 @@ function App() {
     }
     
   ]
+
+  
 
   const eventos = [
     {
