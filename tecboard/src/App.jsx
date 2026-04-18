@@ -63,7 +63,7 @@ function App() {
         <img className='image' src="/Mulher_Com_Oculos.png" alt=''/>
       </section>
       
-      <Box_de_formulario/>
+      <Box_de_formulario temas={temas}/>
 
 
 

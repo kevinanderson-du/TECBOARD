@@ -1,7 +1,10 @@
 import {Teste_de_props} from './Teste_de_props'
+import { Lista_Suspensa } from './Lista_Suspensa'
+import styles from './listaSuspensa.module.css'
+
 import './Style.css'
 
-export function Box_de_formulario () {
+export function Box_de_formulario ({temas}) {
   return (
     <form className='box'>
       
@@ -32,6 +35,12 @@ export function Box_de_formulario () {
         <input className='caixas_de_texto' type='password' id='senha'/>
 
         
+      </fieldset>
+
+      <fieldset>
+        <label className={styles.lista}>
+        <Lista_Suspensa itens={temas}/>
+        </label>
       </fieldset>
       
       
