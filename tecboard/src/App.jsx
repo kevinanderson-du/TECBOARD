@@ -14,13 +14,13 @@ import { Card } from './componentes/Card'
 
 function App() {
 
-  const batata = [{
+  {/*const batata = [{
     id: 1, name: "Gustavo"},
 
     {id: 2, name: "Jessica"},
 
     {id: 3, name: "Kevin"}
-  ]
+  ]*/}
 
   const temas = [
     {
