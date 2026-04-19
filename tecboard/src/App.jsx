@@ -5,10 +5,22 @@ import { Tema } from './componentes/Tema'
 import { Card } from './componentes/Card'
 
 
+{/*import { Cadastro } from './componentes/Cadastro'*/}
+
+
+
 
 
 
 function App() {
+
+  const batata = [{
+    id: 1, name: "Gustavo"},
+
+    {id: 2, name: "Jessica"},
+
+    {id: 3, name: "Kevin"}
+  ]
 
   const temas = [
     {
@@ -66,6 +78,16 @@ function App() {
       <Box_de_formulario temas={temas}/>
 
 
+    {/*TREINANDO A UTILIZAÇÃO DO MAP*/ }
+
+
+      {/*{batata.map((item) => (
+        <section key={item.id}>
+          <Cadastro listaCadastro={item}/>
+        </section>
+      ))}*/}
+
+
 
       {/* 1. O map de FORA constrói as Prateleiras (Temas) */}
 {temas.map(function(temaAtual) {
@@ -114,6 +136,8 @@ function App() {
       <section>
       <Tema tema={temas[5]}/>
       </section>*/}
+
+      
 
 
       <Rodape/>
