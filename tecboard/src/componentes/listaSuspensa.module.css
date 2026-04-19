@@ -1,3 +1,19 @@
-.lista{
-    background-color: blue;
+.lista {
+  width: 100%;
+  display: block; 
+  
 }
+
+.lista select{
+    width: 100%; /* Faz a caixa ocupar todo o espaço disponível */
+  padding: 6px;
+  font-size: 16px; /* Tamanho bom para leitura */
+  color: #ffffff; /* Cor do texto (um cinza bem escuro) */
+  background-color: #181818; /* Fundo branco */
+  border: none; /* Bordinha cinza clara */
+  cursor: pointer;
+  
+  
+}
+
+

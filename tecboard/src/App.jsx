@@ -12,22 +12,22 @@ function App() {
 
   const temas = [
     {
-      id: 1, nome: 'front-end'
+      id: 1, nome: 'Front-end'
     },
     {
-      id: 2, nome: 'back-end'
+      id: 2, nome: 'Back-end'
     },
     {
-      id: 3, nome: 'dev-ops'
+      id: 3, nome: 'Dev-ops'
     },
     {
-      id: 4, nome: 'inteligencia artificial'
+      id: 4, nome: 'Inteligencia Artificial'
     },
     {
-      id: 5, nome: 'Data science'
+      id: 5, nome: 'Data Science'
     },
     {
-      id: 6, nome: 'cloud'
+      id: 6, nome: 'Cloud'
     }
     
   ]
@@ -77,7 +77,7 @@ function App() {
   });
 
   return (
-    <section key={temaAtual.id} className="prateleira-section">
+    <section key={temaAtual.id}>
       
       {/* Imprime o título e detalhes do Tema */}
       <Tema tema={temaAtual} />
