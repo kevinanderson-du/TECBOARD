@@ -6,14 +6,26 @@ import './Style.css'
 
 export function Box_de_formulario ({temas}) {
 
-  function aoFormSubmetido(e){
-    e.preventDefault();
+  function aoFormSubmetido(formData){
+    
     console.log('opa, ta na hora de criar um evento');
+
+    const evento = {
+      capa: formData.get('nome'),
+      cpf: formData.get('cpf'),
+      
+      titulo: formData.get('senha'),
+
+      lista: temas.find(function(item){
+        return item.id == formData.get('lista')
+      })
+    }
+    console.log('esse é o evento evento', evento)
   }
 
 
   return (
-    <form className='box' onSubmit={aoFormSubmetido}>
+    <form className='box' action={aoFormSubmetido}>
       
         
       <Teste_de_props/>
@@ -23,7 +35,7 @@ export function Box_de_formulario ({temas}) {
           Nome:
         </label>
 
-        <input className='caixas_de_texto' type='text' id='nome'/>
+        <input className='caixas_de_texto' name= 'nome' type='text' id='nome'/>
       </fieldset>
 
       <fieldset>
@@ -31,7 +43,7 @@ export function Box_de_formulario ({temas}) {
           CPF:
         </label>
 
-        <input className='caixas_de_texto' type='text' id='cpf'/>
+        <input className='caixas_de_texto' type='text' name= 'cpf' id='cpf'/>
       </fieldset>
 
       <fieldset>
@@ -39,7 +51,7 @@ export function Box_de_formulario ({temas}) {
           Senha:
         </label>
 
-        <input className='caixas_de_texto' type='password' id='senha'/>
+        <input className='caixas_de_texto' type='password' name='senha' id='senha'/>
 
         
       </fieldset>

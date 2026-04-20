@@ -2,7 +2,7 @@
 
 export function Lista_Suspensa ({itens}){
     return(
-        <select defaultValue="">
+        <select defaultValue="" name="lista">
             <option value="" disabled>
                 Selecione um evento.
             </option>
