@@ -5,8 +5,15 @@ import styles from './listaSuspensa.module.css'
 import './Style.css'
 
 export function Box_de_formulario ({temas}) {
+
+  function aoFormSubmetido(e){
+    e.preventDefault();
+    console.log('opa, ta na hora de criar um evento');
+  }
+
+
   return (
-    <form className='box'>
+    <form className='box' onSubmit={aoFormSubmetido}>
       
         
       <Teste_de_props/>
@@ -44,7 +51,7 @@ export function Box_de_formulario ({temas}) {
       </fieldset>
       
       
-        <input className='botao' type='button' id='botao' value="Confirmar"/>
+        <input className='botao' type='submit' id='botao' value="Confirmar"/>
         
       
 
