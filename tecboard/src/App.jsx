@@ -62,6 +62,38 @@ function App() {
     titulo: 'Batatinha',
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     id: 1},
+
+    {
+    capa: '/BATATA.jpg',
+    mini_card: temas[2],
+    data: new Date(),
+    titulo: 'Batatinha',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    id: 2},
+
+    {
+    capa: '/BATATA.jpg',
+    mini_card: temas[3],
+    data: new Date(),
+    titulo: 'Batatinha',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    id: 3},
+
+    {
+    capa: '/BATATA.jpg',
+    mini_card: temas[4],
+    data: new Date(),
+    titulo: 'Batatinha',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    id: 4},
+
+    {
+    capa: '/BATATA.jpg',
+    mini_card: temas[5],
+    data: new Date(),
+    titulo: 'Batatinha',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    id: 5},
     
 
   ]
