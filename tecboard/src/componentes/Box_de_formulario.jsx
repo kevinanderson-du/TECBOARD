@@ -20,7 +20,7 @@ export function Box_de_formulario ({temas}) {
         return item.id == formData.get('lista')
       })
     }
-    console.log('esse é o evento evento', evento)
+    console.log('esse é o evento ', evento)
   }
 
 
