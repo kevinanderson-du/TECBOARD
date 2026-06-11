@@ -1,6 +1,9 @@
+import styles from './rodape_style.module.css'
+
+
 export function Rodape () {
   return (
-    <main>
+    <main className={styles.rodape}>
     <footer>
       <p>© 2026 Kevin Anderson</p>
     </footer>

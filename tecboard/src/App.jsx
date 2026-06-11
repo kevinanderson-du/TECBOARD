@@ -1,4 +1,4 @@
-import {Rodape} from './componentes/Rodape'
+import {Rodape} from './componentes/RODAPE/Rodape'
 import {Box_de_formulario} from './componentes/Box_de_formulario'
 import './componentes/Style.css'
 import { Tema } from './componentes/Tema'
@@ -64,35 +64,35 @@ function App() {
     id: 1},
 
     {
-    capa: '/BATATA.jpg',
+    capa: '/DEVOPS.png',
     mini_card: temas[2],
     data: new Date(),
-    titulo: 'Batatinha',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    titulo: 'DevOps Evolution',
+    desc: "Congresso sobre automação, CI/CD, cultura DevOps, tendências e inovações.",
     id: 2},
 
     {
-    capa: '/BATATA.jpg',
+    capa: '/ROBO-PENSANDO.png',
     mini_card: temas[3],
     data: new Date(),
-    titulo: 'Batatinha',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    titulo: 'Deep Learning Days',
+    desc: "Imersão sobre IA, redes neurais e aprendizado profundo.",
     id: 3},
 
     {
-    capa: '/BATATA.jpg',
+    capa: '/DATA-PULSE.png',
     mini_card: temas[4],
     data: new Date(),
-    titulo: 'Batatinha',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    titulo: 'Data Pulse',
+    desc: "Congresso sobre dados nas decisões estratégicas, análise e inovações da ciência de dados.",
     id: 4},
 
     {
-    capa: '/BATATA.jpg',
+    capa: '/SKYTECH.png',
     mini_card: temas[5],
     data: new Date(),
-    titulo: 'Batatinha',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    titulo: 'SkyTech Summit',
+    desc: "Palestra sobre tendências em computação em nuvem, escalabilidade e infraestrutura.",
     id: 5},
     
 
