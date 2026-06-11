@@ -165,8 +165,8 @@ function App() {
     capa: '/REVOLUTION.png',
     mini_card: temas[5],
     data: new Date(),
-    titulo: 'Evento de Iniciantes Tech',
-    desc: "Encontro de alunos/iniciantes na área tech para aulas com professores.",
+    titulo: 'Revolution',
+    desc: "Workshop online para debater sobre a evolução da tecnologia cloud.",
     id: 14},
     
 
