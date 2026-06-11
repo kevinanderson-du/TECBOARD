@@ -33,7 +33,7 @@ function App() {
       id: 3, nome: 'Dev-ops'
     },
     {
-      id: 4, nome: 'Inteligencia Artificial'
+      id: 4, nome: 'Inteligência Artificial'
     },
     {
       id: 5, nome: 'Data Science'
@@ -56,11 +56,11 @@ function App() {
     id: 0},
 
     {
-    capa: '/BATATA.jpg',
+    capa: '/BACK-END.png',
     mini_card: temas[1],
     data: new Date(),
-    titulo: 'Batatinha',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    titulo: 'Back-End Masters',
+    desc: "Performance e inovação no back-end, conectando especialistas e entusiastas.",
     id: 1},
 
     {
