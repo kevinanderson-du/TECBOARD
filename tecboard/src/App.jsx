@@ -1,6 +1,6 @@
 import {Rodape} from './componentes/RODAPE/Rodape'
-import {Box_de_formulario} from './componentes/LISTA SUSPENSA/Box_de_formulario'
-import './componentes/Style.css'
+import {Box_de_formulario} from './componentes/LISTA_SUSPENSA/Box_de_formulario'
+import './componentes/LISTA_SUSPENSA/Style.css'
 import { Tema } from './componentes/TEMAS/Tema'
 import { Card } from './componentes/CARDS/Card'
 
