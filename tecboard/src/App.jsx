@@ -2,7 +2,8 @@ import {Rodape} from './componentes/RODAPE/Rodape'
 import {Box_de_formulario} from './componentes/Box_de_formulario'
 import './componentes/Style.css'
 import { Tema } from './componentes/Tema'
-import { Card } from './componentes/Card'
+import { Card } from './componentes/CARDS/Card'
+
 
 
 {/*import { Cadastro } from './componentes/Cadastro'*/}
@@ -56,12 +57,37 @@ function App() {
     id: 0},
 
     {
+    capa: '/PIXEL & CODE.png',
+    mini_card: temas[0],
+    data: new Date(),
+    titulo: 'Pixel & Code',
+    desc: 'Meetup unindo design e desenvolvimento front-end para explorar tendências em UI.',
+    id: 6},
+
+
+    {
     capa: '/BACK-END.png',
     mini_card: temas[1],
     data: new Date(),
     titulo: 'Back-End Masters',
     desc: "Performance e inovação no back-end, conectando especialistas e entusiastas.",
     id: 1},
+
+    {
+    capa: '/CODE TO CORE.png',
+    mini_card: temas[1],
+    data: new Date(),
+    titulo: 'Code to Core',
+    desc: "Workshop que explora a essência do back-end, escalabilidade e boas práticas.",
+    id: 7},
+
+    {
+    capa: '/SERVER.png',
+    mini_card: temas[1],
+    data: new Date(),
+    titulo: 'Server Side Summit',
+    desc: "Evento dedicado a tecnologias e estratégias para desenvolvimento back-end.",
+    id: 8},
 
     {
     capa: '/DEVOPS.png',
@@ -80,6 +106,22 @@ function App() {
     id: 3},
 
     {
+    capa: '/MULHER NO CELULAR.png',
+    mini_card: temas[3],
+    data: new Date(),
+    titulo: 'IA na palma da mão',
+    desc: "Workshop IA em dispositivos móveis, aplicando a tecnologia em soluções acessíveis.",
+    id: 9},
+
+    {
+    capa: '/ROBO.png',
+    mini_card: temas[3],
+    data: new Date(),
+    titulo: 'IA Segura e Acessível',
+    desc: "Palestra sobre segurança e inclusão em soluções baseadas em inteligência artificial.",
+    id: 10},
+
+    {
     capa: '/DATA-PULSE.png',
     mini_card: temas[4],
     data: new Date(),
@@ -88,12 +130,44 @@ function App() {
     id: 4},
 
     {
+    capa: '/SQL.png',
+    mini_card: temas[4],
+    data: new Date(),
+    titulo: 'SQL Summit',
+    desc: "Ciclo de palestras com especialistas do universo dos bancos de dados SQL.",
+    id: 11},
+
+    {
     capa: '/SKYTECH.png',
     mini_card: temas[5],
     data: new Date(),
     titulo: 'SkyTech Summit',
     desc: "Palestra sobre tendências em computação em nuvem, escalabilidade e infraestrutura.",
     id: 5},
+
+    {
+    capa: '/MUNDO CLOUD.png',
+    mini_card: temas[5],
+    data: new Date(),
+    titulo: 'Mundo Cloud',
+    desc: "Encontro de especialistas e entusiastas para discutir novidades da tecnologia cloud.",
+    id: 12},
+
+    {
+    capa: '/CARA DE ÓCULOS.png',
+    mini_card: temas[5],
+    data: new Date(),
+    titulo: 'Evento de Iniciantes Tech',
+    desc: "Encontro de alunos/iniciantes na área tech para aulas com professores.",
+    id: 13},
+
+    {
+    capa: '/REVOLUTION.png',
+    mini_card: temas[5],
+    data: new Date(),
+    titulo: 'Evento de Iniciantes Tech',
+    desc: "Encontro de alunos/iniciantes na área tech para aulas com professores.",
+    id: 14},
     
 
   ]
@@ -137,7 +211,7 @@ function App() {
       <Tema tema={temaAtual} />
 
       {/* 3. O map de DENTRO desenha os Cards que passaram no filtro */}
-      <div>
+      <div className='lista-cards'>
         {eventosDestaPrateleira.map(function(eventoAtual) {
           return (
             // Agora sim passamos o evento correto! E usamos o seu novo ID como key.

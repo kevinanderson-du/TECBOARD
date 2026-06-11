@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #091212;
     
 }
 
@@ -102,4 +102,13 @@ fieldset {
     margin: 20px auto;
     display: flex;
     justify-content: center;
+}
+
+.lista-cards{
+    display: flex;
+    flex-direction: row; /* Lado a lado */
+    gap: 30px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Joga pra baixo se faltar tela */
+    margin-left: 15%; /* Mantém o alinhamento com o seu título */
+    
 }

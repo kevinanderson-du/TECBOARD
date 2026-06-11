@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     width: 282px;          /* A largura fica AQUI */
-    margin-left: 15%; /* Ajuste essa porcentagem (ex: 15%, 30%) até ficar no ponto ideal */
+    
+    
     
     border-radius: 10px;   /* Arredonda o card INTEIRO */
     overflow: hidden;      /* Mágica que corta a quina quadrada da imagem pra seguir o border-radius */
-    align-items: center; /* Puxa os cards horizontalmente para o centro */
+    
     background-color: #212121;
 }
 
