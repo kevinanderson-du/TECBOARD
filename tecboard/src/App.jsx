@@ -172,6 +172,27 @@ function App() {
 
   ]
 
+  const minhasCompras = [
+    {id: 1, nome: "Compra 1"},
+    {id: 2, nome: "Compra 2"}
+  ]
+
+  const compras = [
+    { fotoDoProduto: "./REVOLUTION.png",
+      preco: "R$20,00",
+      descricao: "Compra finalizada dia 20/08",
+      classificacao: minhasCompras[0],
+      id: 1,
+    },
+
+    { fotoDoProduto: "./BATATA.png",
+      preco: "R$30,00",
+      descricao: "Compra finalizada dia 22/08",
+      classificacao: minhasCompras[1],
+      id: 2,
+    },
+  ]
+
   return (
     <main>
       <header className='header'>
@@ -196,11 +217,9 @@ function App() {
 
 
       {/* 1. O map de FORA constrói as Prateleiras (Temas) */}
-{temas.map(function(temaAtual) {
+{temas.map((temaAtual) => {
   
-  // 2. O FILTRO: Vasculha a lista de eventos e guarda só os deste tema
-  // Ele compara o ID do tema do evento com o ID da prateleira atual
-  const eventosDestaPrateleira = eventos.filter(function(evento) {
+  const eventosDestaPrateleira = eventos.filter((evento) => {
     return evento.mini_card.id === temaAtual.id;
   });
 
@@ -212,7 +231,7 @@ function App() {
 
       {/* 3. O map de DENTRO desenha os Cards que passaram no filtro */}
       <div className='lista-cards'>
-        {eventosDestaPrateleira.map(function(eventoAtual) {
+        {eventosDestaPrateleira.map((eventoAtual) => {
           return (
             // Agora sim passamos o evento correto! E usamos o seu novo ID como key.
             <Card key={eventoAtual.id} evento={eventoAtual} />
@@ -223,6 +242,23 @@ function App() {
     </section>
   );
 })}
+
+
+
+  {/*{minhasCompras.map((compraAtual) => {
+    const carrinho = compras.filter((primeiraCompra) => {
+      return primeiraCompra.id === compraAtual.id; 
+    })
+
+    return (
+      <div key={primeiraCompra.id}>
+        <h1>{compraAtual.nome}</h1>
+      </div>
+    )
+  })}/*}
+
+
+
       
       {/*<section>
       <Tema tema={temas[0]}/>
